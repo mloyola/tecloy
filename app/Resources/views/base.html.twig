@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}{% endblock %} : TECLOY Tecnología & Servicios E.I.R.L</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="" />
+        <meta name="author" content="mauricio.loyola@tecloy.com" />
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        <div id="wrapper">
+            {% block menu %}{% endblock %}
+            {% block body %}{% endblock %}
+            {% block footer %}{% endblock %}
+        </div>
+        <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+        {% block javascripts %}{% endblock %}           
+    </body>
+</html>
+
+

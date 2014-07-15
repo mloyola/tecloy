@@ -1,0 +1,145 @@
+{% extends '::base.html.twig' %}
+
+{% block stylesheets %}     
+    <link href="{{ asset(global.directorio_css ~ "bootstrap.min.css")}}" rel="stylesheet">
+    <link href="{{ asset(global.directorio_css ~ "fancybox/jquery.fancybox.css")}}" rel="stylesheet">    
+    <link href="{{ asset(global.directorio_css ~ "jcarousel.css")}}" rel="stylesheet">    
+    <link href="{{ asset(global.directorio_css ~ "flexslider.css")}}" rel="stylesheet">   
+    <link href="{{ asset(global.directorio_css ~ "style.css")}}" rel="stylesheet">             
+    <!-- Theme skin -->
+    <link href="{{ asset(global.directorio_skins ~ "default.css")}}" rel="stylesheet">
+{% endblock %}
+
+{% block menu %}
+<!-- start header -->
+	<header>
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="{{ path('frontend_homepage') }}"><span>TECLOY</span> {{ 'Tecnología & Servicios'|trans }} E.I.R.L</a>
+                </div>
+                <div class="navbar-collapse collapse ">
+                    <ul class="nav navbar-nav">
+                        <li {% block active_home %} {% endblock %} ><a href="index.html">Home</a></li>
+                        <li><a href="#">{{ 'Empresa'|trans }}</a></li>
+                        <li class="dropdown ">
+                            <a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">{{ 'Servicios'|trans }} <b class=" icon-angle-down"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">{{ 'Instalaciones'|trans }}</a></li>
+                                <li><a href="#">{{ 'Proyectos'|trans }}</a></li>
+                                <li><a href="#">{{ 'Desarrollo de Aplicaciones'|trans }}</a></li>
+								<li><a href="#">{{ 'Soporte y Mantenimiento'|trans }}</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">{{ 'Proyectos'|trans }}</a></li>
+                        <li><a href="#">{{ 'Blog'|trans }}</a></li>
+                        <li {% block active_contacto %} {% endblock %} ><a href="#">{{ 'Contacto'|trans }}</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</header>
+	<!-- end header -->
+{% endblock %}
+
+{% block body %}
+	{% block slider %}{% endblock %}	
+	{% block contenido %}{% endblock %}	
+{% endblock %}
+
+{% block footer %}
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3">
+				<div class="widget">
+					<h5 class="widgetheading">{{ 'Contáctenos'|trans }}</h5>
+					<address>
+					<strong>{{ 'TECLOY Tecnología & Servicios E.I.R.L'|trans }}</strong><br>
+					 {{ 'Jr. Ricardo Herrera 835 Dpto.A'|trans }}<br>
+					 {{ 'Lima 01, Perú'|trans }} </address>
+					<p>
+						<i class="icon-phone"></i> (+51) 1-382-3890<br>
+						<i class="icon-envelope-alt"></i> info@tecloy.com
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="widget">
+					<h5 class="widgetheading">{{ 'Páginas'|trans }}</h5>
+					<ul class="link-list">
+						<li><a href="#">Press release</a></li>
+						<li><a href="#">Terms and conditions</a></li>
+						<li><a href="#">Privacy policy</a></li>
+						<li><a href="#">Career center</a></li>
+						<li><a href="#">Contact us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="widget">
+					<h5 class="widgetheading">{{ 'Contáctenos'|trans }}</h5>
+					<ul class="link-list">
+						<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+						<li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
+						<li><a href="#">Natus error sit voluptatem accusantium doloremque</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="widget">
+					{#
+					<h5 class="widgetheading">Flickr photostream</h5>
+					<div class="flickr_badge">
+						<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=random&amp;size=s&amp;layout=x&amp;source=user&amp;user=34178660@N03"></script>
+					</div>
+					<div class="clear">
+					</div>
+					#}
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="sub-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="copyright">
+						<p>
+							<span>&copy; TECLOY 2014 All right reserved. By </span><a href="http://www.tecloy.com" target="_blank">TECLOY Tecnoloía & Servicios E.I.R.L</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<ul class="social-network">
+						<li><a href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+						<li><a href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</footer>
+{% endblock %}
+
+{% block javascripts %}    
+  <script src="{{ asset(global.directorio_js ~ "jquery.js")}}"></script>     
+  <script src="{{ asset(global.directorio_js ~ "jquery.easing.1.3.js")}}"></script>     
+  <script src="{{ asset(global.directorio_js ~ "bootstrap.min.js")}}"></script>     
+  <script src="{{ asset(global.directorio_js ~ "jquery.fancybox.pack.js")}}"></script>     
+  <script src="{{ asset(global.directorio_js ~ "jquery.fancybox-media.js")}}"></script>     
+  <script src="{{ asset(global.directorio_js ~ "google-code-prettify/prettify.js")}}"></script>     
+  <script src="{{ asset(global.directorio_js ~ "portfolio/jquery.quicksand.js")}}"></script>     
+  <script src="{{ asset(global.directorio_js ~ "portfolio/setting.js")}}"></script>     
+  <script src="{{ asset(global.directorio_js ~ "jquery.flexslider.js")}}"></script>     
+  <script src="{{ asset(global.directorio_js ~ "animate.js")}}"></script>     
+  <script src="{{ asset(global.directorio_js ~ "custom.js")}}"></script>       
+{% endblock %}

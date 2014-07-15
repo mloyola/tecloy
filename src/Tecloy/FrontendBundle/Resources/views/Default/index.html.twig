@@ -1,0 +1,228 @@
+{% extends '::frontend.html.twig' %}
+
+{% block title %}{{ 'Home'|trans }}{% endblock %}
+
+{% block active_home %}class="active"{% endblock %}
+{% block active_contacto %}{% endblock %}
+
+{% block slider %}
+	<section id="featured">
+	<!-- start slider -->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<!-- Slider -->
+        			<div id="main-slider" class="flexslider">
+            			<ul class="slides">              				              				
+              				<li>
+                				<img src="{{ asset(global.directorio_img ~ "slides/7.jpg")}}" alt="" />
+                				<div class="flex-caption">
+                    				<h3>{{ 'Instalación y Soporte de Hardware'|trans }}</h3> 
+									<p>{{ 'Data Center, Gabinetes, Switch, Router, Server, Pach Panel, Ordenadores'|trans }}.</p> 
+									<a href="#" class="btn btn-theme">{{ 'Leer más'|trans }}</a>
+                				</div>
+              				</li>
+              				<li>
+                				<img src="{{ asset(global.directorio_img ~ "slides/4.jpg")}}" alt="" />
+                				<div class="flex-caption">
+                    				<h3>{{ 'Instalación y Soporte de Redes UTP y F.O'|trans }}</h3> 
+									<p>{{ 'Cableado de redes UTP (Cat.5, Cat.6, Cat.7) y F.O, puntos de red para oficinas y comercios'|trans }}.</p> 
+									<a href="#" class="btn btn-theme">{{ 'Leer más'|trans }}</a>
+                				</div>
+              				</li>
+              				<li>
+                				<img src="{{ asset(global.directorio_img ~ "slides/8.jpg")}}" alt="" />
+                				<div class="flex-caption">
+                    				<h3>{{ 'Soporte TI'|trans }}</h3> 
+									<p>{{ 'Usuarios, Data Center, Hardware, Software, Proyectos, etc'|trans }}.</p> 
+									<a href="#" class="btn btn-theme">{{ 'Leer más'|trans }}</a>
+                				</div>
+              				</li>
+              				<li>
+                				<img src="{{ asset(global.directorio_img ~ "slides/3.jpg")}}" alt="" />
+                				<div class="flex-caption">
+                    				<h3>{{ 'Diseño y Desarrollo de Aplicaciones'|trans }}</h3> 
+									<p>{{ 'Páginas web para personas, empresas y comercios, programas empresariales (ventas, contabilidad, almacén, facturación), App para dispositivos móviles'|trans }}.</p> 
+									<a href="#" class="btn btn-theme">{{ 'Leer más'|trans }}</a>
+                				</div>
+              				</li>
+              				<li>
+                				<img src="{{ asset(global.directorio_img ~ "slides/6.jpg")}}" alt="" />
+                				<div class="flex-caption">
+                    				<h3>{{ 'Video Wall y Marketing TV'|trans }}</h3> 
+									<p>{{ 'Instalación de sistemas de video y audio para oficinas, comercios y locales'|trans }}.</p> 
+									<a href="#" class="btn btn-theme">{{ 'Leer más'|trans }}</a>
+                				</div>
+              				</li>
+            			</ul>
+        			</div>
+					<!-- end slider -->
+				</div>
+			</div>
+		</div>	
+	</section>
+{% endblock %}
+
+{% block contenido %}
+	<section class="callaction">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="big-cta">
+						<div class="cta-text">
+							<h2><span>Steve Jobs</span> {{ 'La innovación distingue a los líderes de los seguidores'|trans }}.</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="box">
+							<div class="box-gray aligncenter">
+								<h4>{{ 'Mesa de ayuda'|trans }}</h4>
+								<div class="icon">
+								<i class="fa fa-headphones fa-3x"></i>
+								</div>
+								<p>
+								 {{ 'Brindamos el servicio de orientación, atención de consultas y generación de requerimientos en un amplio horario para mejorar la satisfacción de nuestros clientes'|trans }}.
+								</p>
+									
+							</div>
+							<div class="box-bottom">
+								<a href="#">{{ 'Leer más'|trans }}</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="box">
+							<div class="box-gray aligncenter">
+								<h4>{{ 'Proyectos'|trans }}</h4>
+								<div class="icon">
+								<i class="fa fa-star fa-3x"></i>
+								</div>
+								<p>
+								 {{ 'Somos el soporte y aliado que nuestros clientes necesitan para lograr diseñar, desarrollar e implementar sus proyectos tecnológicos'|trans }}.
+								</p>
+									
+							</div>
+							<div class="box-bottom">
+								<a href="#">{{ 'Leer más'|trans }}</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="box">
+							<div class="box-gray aligncenter">
+								<h4>{{ 'Instalaciones'|trans }}</h4>
+								<div class="icon">
+								<i class="fa fa-cog fa-3x"></i>
+								</div>
+								<p>
+								 {{ 'Profesionales de amplia experiencia en la instalación, implementación y puesta en marcha de soluciones y proyectos de tecnología'|trans }}.
+								</p>
+									
+							</div>
+							<div class="box-bottom">
+								<a href="#">{{ 'Leer más'|trans }}</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="box">
+							<div class="box-gray aligncenter">
+								<h4>{{ 'Soporte'|trans }}</h4>
+								<div class="icon">
+								<i class="fa fa-wrench fa-3x"></i>
+								</div>
+								<p>
+								 {{ 'Contamos con un equipo técnico profesional para atender soportes y mantenimientos de hardware y software bajo contrato o convenio de asistencia'|trans }}.
+								</p>
+									
+							</div>
+							<div class="box-bottom">
+								<a href="#">{{ 'Leer más'|trans }}</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- divider -->
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="solidline">
+				</div>
+			</div>
+		</div>
+		<!-- end divider -->
+		<!-- Portfolio Projects -->
+		<div class="row">
+			<div class="col-lg-12">
+				<h4 class="heading">{{ 'Últimos trabajos'|trans }}</h4>
+				<div class="row">
+					<section id="projects">
+					<ul id="thumbs" class="portfolio">
+						<!-- Item Project and Filter Name -->
+						<li class="col-lg-3 design" data-id="id-0" data-type="web">
+						<div class="item-thumbs">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{ 'Instalación Marketing Dinámico en CAC de CLARO de C.C Plaza San Miguel'|trans }}" href="{{ asset(global.directorio_img ~ "works/wsanmiguel01_01.jpg")}}">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img src="{{ asset(global.directorio_img ~ "works/wsanmiguel01_01.jpg")}}" alt="{{ 'Se instalo y configuro sistema de video HDMI, equipo DMP de CISCO, audio y cableado de datos para la emisión de videos de Marketing y Publicidad'|trans }}.">
+						</div>
+						</li>
+						<!-- End Item Project -->
+						<!-- Item Project and Filter Name -->
+						<li class="item-thumbs col-lg-3 design" data-id="id-1" data-type="icon">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{ 'Instalación Marketing Dinámico en CAC de CLARO de C.C Jockey Plaza'|trans }}" href="{{ asset(global.directorio_img ~ "works/wjockeyplaza01_01.jpg")}}">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img src="{{ asset(global.directorio_img ~ "works/wjockeyplaza01_01.jpg")}}" alt="{{ 'Se instalo y configuro sistema de video HDMI, equipo DMP de CISCO, audio y cableado de datos en TV de 75“ para la emisión de videos de Marketing y Publicidad'|trans }}.">
+						</li>
+						<!-- End Item Project -->
+						<!-- Item Project and Filter Name -->
+						<li class="item-thumbs col-lg-3 photography" data-id="id-2" data-type="illustrator">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{ 'Instalación Marketing Dinámico en CAC de CLARO de C.C Lima Plaza Norte'|trans }}" href="{{ asset(global.directorio_img ~ "works/wplazanorte01_01.jpg")}}">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img src="{{ asset(global.directorio_img ~ "works/wplazanorte01_01.jpg")}}" alt="{{ 'Se instalo y configuro sistema de video HDMI, equipo DMP de CISCO, audio y cableado de datos en TV para la emisión de videos de Marketing y Publicidad'|trans }}.">
+						</li>
+						<!-- End Item Project -->
+						<!-- Item Project and Filter Name -->
+						<li class="item-thumbs col-lg-3 photography" data-id="id-2" data-type="illustrator">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{ 'Instalación Marketing Dinámico en CAC de CLARO de C.C Mega Plaza'|trans }}" href="{{ asset(global.directorio_img ~ "works/wmegaplaza01_01.jpg")}}">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img src="{{ asset(global.directorio_img ~ "works/wmegaplaza01_01.jpg")}}" alt="{{ 'Se instalo y configuro sistema de video HDMI, equipo DMP de CISCO, audio y cableado de datos en TV de 75“ para la emisión de videos de Marketing y Publicidad'|trans }}.">
+						</li>
+						<!-- End Item Project -->
+					</ul>
+					</section>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	</section>
+
+{% endblock %}	
+
