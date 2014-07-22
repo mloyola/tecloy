@@ -1,0 +1,79 @@
+{% extends '::frontend.html.twig' %}
+
+{% block title %}{{ 'Contacto'|trans }}{% endblock %}
+
+{% block active_home %}{% endblock %}
+{% block active_empresa %}{% endblock %}
+{% block active_servicio %}{% endblock %}
+{% block active_proyecto %}{% endblock %}
+{% block active_blog %}{% endblock %}
+{% block active_contacto %}class="active"{% endblock %}
+
+{% block slider %}{% endblock %}
+
+{% block contenido %}
+	<section id="inner-headline">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<ul class="breadcrumb">
+						<li><a href="{{ path('frontend_homepage') }}"><i class="fa fa-home"></i></a><i class="icon-angle-right"></i></li>
+						<li class="active">{{ 'Contacto'|trans }}</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="content">
+	
+	<div class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15607.85387629286!2d-77.05990619999997!3d-12.046034499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c92bb73c53c5%3A0x4a0f1391f2be0d79!2sRicardo+Herrera%2C+Lima+15082%2C+Per%C3%BA!5e0!3m2!1ses!2s!4v1405964784197" width="600" height="450" frameborder="0" style="border:0"></iframe>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h4>{{'Póngase en contacto con nosotros completando el formulario de contacto de abajo' | trans }}</h4>							
+
+					{% for flashMessage in app.session.flashbag.get('info') %}
+        				<div class="alert alert-success">
+							<i class="fa fa-envelope-o fa-2x"></i> {{ flashMessage }}!
+        				</div>
+      				{% endfor %}
+																        				
+        			<form id="contactform" action="{{ path('frontend_contacto') }}" method="post" class="validateform" name="send-contact" >
+        				<div class="row">
+        					{{ form_enctype(form) }}
+
+        					{{ form_errors(form) }}
+
+        					<div class="col-lg-4 field">
+        						{{ form_widget(form.name) }}    
+        					</div>	
+
+        					<div class="col-lg-4 field">
+        						{{ form_widget(form.email) }}    
+        					</div>
+
+        					<div class="col-lg-4 field">
+        						{{ form_widget(form.subject) }}    
+        					</div>
+
+        					<div class="col-lg-12 margintop10 field">
+        						{{ form_widget(form.message) }}  
+        						<p>
+								<button class="btn btn-theme margintop10 pull-left" type="submit">{{'Enviar' | trans }}</button>
+								<span class="pull-right margintop20">* {{'Por favor, rellene todos los campos de formulario requerido, gracias' | trans }}!</span>
+								</p>  
+        					</div>    					    					
+
+    						{{ form_rest(form) }}
+    					</div>	
+					</form>				
+			</div>
+		</div>
+	</div>
+	</section>
+{% endblock %}	
+

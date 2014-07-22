@@ -1,0 +1,199 @@
+{% extends '::frontend.html.twig' %}
+
+{% block title %}{{ 'Empresa'|trans }}{% endblock %}
+
+{% block active_home %}{% endblock %}
+{% block active_empresa %}class="active"{% endblock %}
+{% block active_servicio %}{% endblock %}
+{% block active_proyecto %}{% endblock %}
+{% block active_blog %}{% endblock %}
+{% block active_contacto %}{% endblock %}
+
+{% block slider %}{% endblock %}
+
+{% block contenido %}
+	<section id="inner-headline">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<ul class="breadcrumb">
+						<li><a href="{{ path('frontend_homepage') }}"><i class="fa fa-home"></i></a><i class="icon-angle-right"></i></li>
+						<li class="active">{{ 'Empresa'|trans }}</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="callaction">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="big-cta">
+						<div class="cta-text">
+							<h2>{{ 'La calidad es más importante que la cantidad. Un home run es mejor que dos dobles'|trans }}.</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="row">
+						
+						<div class="col-lg-6">
+							<div class="box">
+								<div class="box-gray aligncenter">
+									<img src="{{ asset(global.directorio_img ~ "empresa.jpg")}}" alt="{{ 'TECLOY tecnología & Servicios E.I.R.L  es una empresa peruana proveedora de servicios y soluciones de tecnología de la información y las comunicaciones'|trans }}">									
+								</div>								
+							</div>
+						</div>
+
+						<div class="col-lg-6">
+							<div class="box">
+								<p>
+									<strong>{{ 'TECLOY Tecnología & Servicios E.I.R.L'|trans }}</strong>, {{ 'es una empresa peruana proveedora de servicios y soluciones de tecnología de la información y las comunicaciones'|trans }}.
+								</p>
+								<p>
+									{{ 'Posee una estructura que permite brindar un servicio y consultoría de calidad para satisfacer todas las necesidades y requerimientos del mercado tecnológico y de nuestros clientes'|trans }}.
+								</p>
+								<p>
+									{{ 'La empresa cuenta con un equipo de profesionales con alta capacidad y experiencia que permite garantizar y alcanzar los objetivos de nuestros clientes'|trans }}.
+								</p>
+							</div>
+						</div>					
+					</div>
+
+				</div>
+			</div>
+			
+			<!-- divider -->
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="solidline">
+					</div>
+				</div>
+			</div>
+			<!-- end divider -->
+			
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="row">
+						
+						<div class="col-lg-6">
+							<div class="box">
+								<h1>{{ 'Visión'|trans }}</h1>
+								<p>
+									{{ 'Ser la mejor empresa de servicios y soluciones de TI, nuestras metas están orientadas a alcanzar estos objetivos por medio de innovación, calidad y compromiso'|trans }}.
+								</p>
+								<p>
+									{{ 'Para cumplir nuestras metas nos basamos en los siguientes principios'|trans }}:
+								</p>
+								<p>
+									<strong>{{ 'Innovación y Servicio'|trans }}</strong>, {{ 'nuestro principal objetivo es ser los mejores en lo que hacemos a través de tecnología, innovación y la calidad de servicio'|trans }}.
+								</p>
+								<p>
+									<strong>{{ 'Clientes'|trans }}</strong>, {{ 'buscamos mantener y reforzar la relación con nuestros clientes en base a la confianza, lealtad, calidad, valor y buen servicio.'|trans }}.
+								</p>
+							</div>
+						</div>
+
+						<div class="col-lg-6">
+							<div class="box">
+								<div class="box-gray aligncenter">
+									<img src="{{ asset(global.directorio_img ~ "vision.jpg")}}" alt="{{ 'Ser la mejor empresa de servicios y soluciones de TI, nuestras metas están orientadas a alcanzar estos objetivos por medio de innovación, calidad y compromiso'|trans }}">									
+								</div>								
+							</div>
+						</div>
+											
+					</div>
+
+				</div>
+			</div>
+
+			<!-- divider -->
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="solidline">
+					</div>
+				</div>
+			</div>
+			<!-- end divider -->
+			
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="row">
+						
+						<div class="col-lg-6">
+							<div class="box">
+								<div class="box-gray aligncenter">
+									<img src="{{ asset(global.directorio_img ~ "mision.jpg")}}" alt="{{ 'Ser la mejor empresa de servicios y soluciones de TI, nuestras metas están orientadas a alcanzar estos objetivos por medio de innovación, calidad y compromiso'|trans }}">									
+								</div>								
+							</div>
+						</div>
+
+						<div class="col-lg-6">
+							<div class="box">
+								<h1>{{ 'Misión'|trans }}</h1>
+								<p>
+									"... {{ 'no debemos buscar la perfección, pero si perseguir la excelencia'|trans }}..." (Mario Duplessis)
+								</p>
+								<p>
+									{{ 'Con nuestra empresa siempre tendrá un trato personal, cercano, directo y dispondrá de la flexibilidad adecuada a sus necesidades y requerimientos'|trans }}.									
+								</p>								
+							</div>
+						</div>
+					
+					</div>
+
+				</div>
+			</div>
+
+			<!-- divider -->
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="solidline">
+					</div>
+				</div>
+			</div>
+			<!-- end divider -->
+			
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="row">
+						
+						<div class="col-lg-6">
+							<div class="box">
+								<h1>{{ 'Valores'|trans }}</h1>								
+								<ul>
+									<li>{{ 'Innovación'|trans }}</li>
+									<li>{{ 'Excelencia'|trans }}</li>
+									<li>{{ 'Responsabilidad'|trans }}</li>
+									<li>{{ 'Orientación al cliente'|trans }}</li>
+									<li>{{ 'Trabajo en equipo'|trans }}</li>
+									<li>{{ 'Ética y lealtad'|trans }}</li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="col-lg-6">
+							<div class="box">
+								<div class="box-gray aligncenter">
+									<img src="{{ asset(global.directorio_img ~ "valor.jpg")}}" alt="{{ 'Ser la mejor empresa de servicios y soluciones de TI, nuestras metas están orientadas a alcanzar estos objetivos por medio de innovación, calidad y compromiso'|trans }}">									
+								</div>								
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+{% endblock %}
