@@ -40,14 +40,14 @@ class DefaultController extends Controller
                 if ($form->isValid())
                 {                	
                     $datos = $form->getData();                       
-
+                
                     $contenido = sprintf(" Remitente: %s \n\n E-mail: %s \n\n Asunto: %s \n\n Mensaje: %s \n\n Navegador: %s \n Dirección IP: %s \n",
                         $datos['name'],
                         $datos['email'],
                         $datos['subject'],
                         htmlspecialchars($datos['message']),
-                        $peticion->server->get('HTTP_USER_AGENT'),
-                        $peticion->server->get('REMOTE_ADDR')
+                        $request->server->get('HTTP_USER_AGENT'),
+                        $request->server->get('REMOTE_ADDR')
                     );
 
                     $mensaje = \Swift_Message::newInstance()

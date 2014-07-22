@@ -64,8 +64,8 @@
 					 {{ 'Jr. Ricardo Herrera 835 Dpto.A'|trans }}<br>
 					 {{ 'Lima 01, Perú'|trans }} </address>
 					<p>
-						<i class="icon-phone"></i> (+51) 1-6614435<br>
-						<i class="icon-envelope-alt"></i> info@tecloy.com
+						<i class="fa fa-phone fa-1x"></i> <a href="tel:+51016614435">(+51) 1-6614435</a><br>
+						<i class="fa fa-envelope-o fa-1x"></i> <a href="mailto:info@tecloy.com">info@tecloy.com</a> 
 					</p>
 				</div>
 			</div>
@@ -130,7 +130,7 @@
 	</footer>
 {% endblock %}
 
-{% block javascripts %}    
+{% block javascripts %}    	
   <script src="{{ asset(global.directorio_js ~ "jquery.js")}}"></script>     
   <script src="{{ asset(global.directorio_js ~ "jquery.easing.1.3.js")}}"></script>     
   <script src="{{ asset(global.directorio_js ~ "bootstrap.min.js")}}"></script>     
@@ -153,4 +153,5 @@
   ga('send', 'pageview');
   
   </script>  
+
 {% endblock %}
