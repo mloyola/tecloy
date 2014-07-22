@@ -44,14 +44,13 @@
 
 					{% for flashMessage in app.session.flashbag.get('info') %}
         				<div class="alert alert-success">
-							<i class="fa fa-envelope-o fa-2x"></i> {{ flashMessage }}!
+							<i class="fa fa-envelope-o fa-1x"></i> {{ flashMessage }}!
         				</div>
       				{% endfor %}
 																        				
-        			<form id="contactform" action="{{ path('frontend_contacto') }}" method="post" class="validateform" name="send-contact" >
-        				<div class="row">
-        					{{ form_enctype(form) }}
-
+        			{#<form id="contactform" action="{{ path('frontend_contacto') }}" method="post" class="validateform" name="send-contact" >#}        			
+        			<form role="form" action="{{ path('frontend_contacto') }}" method="post" {{ form_enctype(form) }}>    	
+        				<div class="row">        					
         					{{ form_errors(form) }}
 
         					<div class="col-lg-4 field">
@@ -69,7 +68,9 @@
         					<div class="col-lg-12 margintop10 field">
         						{{ form_widget(form.message) }}  
         						<p>
-								<button class="btn btn-theme margintop10 pull-left" type="submit">{{'Enviar' | trans }}</button>
+        							{{ form_widget(form.enviar) }}  
+								{#<button class="btn btn-theme margintop10 pull-left" type="submit">{{'Enviar' | trans }}</button>#}
+
 								<span class="pull-right margintop20">* {{'Por favor, rellene todos los campos de formulario requerido, gracias' | trans }}!</span>
 								</p>  
         					</div>    					    					
@@ -82,8 +83,3 @@
 	</div>
 	</section>
 {% endblock %}	
-
-{% block javascripts %}
-	{{ parent() }}
-	<script src="js/validate.js"></script>
-{% endblock %}

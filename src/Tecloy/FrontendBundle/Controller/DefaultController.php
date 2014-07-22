@@ -32,6 +32,7 @@ class DefaultController extends Controller
         	->add('email', 'text',array('max_length' => '100','attr' => array('class' => 'form-control','placeholder' => '* Ingrese su dirección de correo electrónico', 'data-rule' => 'maxlen:4', 'data-msg' => 'Por favor, introduzca un email válido')))                              
             ->add('subject', 'text',array('max_length' => '50','attr' => array('class' => 'form-control','placeholder' => '* Ingresa el asunto', 'data-rule' => 'maxlen:4', 'data-msg' => 'Introduzca por lo menos 4 caracteres')))
             ->add('message', 'textarea',array('max_length' => '300','attr' => array('class' => 'form-control','placeholder' => '* Tu mensaje aquí', 'data-rule' => 'maxlen:4', 'data-msg' => 'Por favor, escribir algo', 'rows' => '10')))                                        
+            ->add('enviar', 'submit', array('attr' => array('class' => 'btn btn-theme margintop10 pull-left')))
             ->getForm();        
 
         if ($request->getMethod() == 'POST')
