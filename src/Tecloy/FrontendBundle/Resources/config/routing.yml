@@ -8,4 +8,20 @@ frontend_empresa:
 
 frontend_contacto:
     pattern:  /contacto
-    defaults: { _controller: FrontendBundle:Default:contacto }    
+    defaults: { _controller: FrontendBundle:Default:contacto }
+
+frontend_soporte:
+    pattern:  /soporte
+    defaults: { _controller: FrontendBundle:Default:soporte }
+
+frontend_mantenimiento:
+    pattern:  /mantenimiento
+    defaults: { _controller: FrontendBundle:Default:mantenimiento }
+
+frontend_sopormanten:
+    pattern:  /sopormante
+    defaults: { _controller: FrontendBundle:Default:sopormanten }
+
+frontend_mesaayuda:
+    pattern:  /mesaayuda
+    defaults: { _controller: FrontendBundle:Default:mesaayuda }

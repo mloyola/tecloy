@@ -1,0 +1,161 @@
+{% extends '::frontend.html.twig' %}
+
+{% block title %}{{ 'Soporte TI'|trans }}{% endblock %}
+
+{% block metadescrip %} {{'Nuestro personal técnico podrá atender y resolver sus dudas, consultas o incidencias vía telefónica, email, chat y/o escritorio remoto'|trans }}{% endblock %}
+{% block metakey %}soporte, soporte TI, soporte remoto, soporte en sitio, soporte en onsite, soporteti, hosting, teamviever, logmein, eliminacion de virus, correos, configuracion, app, google apps, outlook, erp, firewall, opensource{% endblock %}
+
+{% block active_home %}{% endblock %}
+{% block active_empresa %}{% endblock %}
+{% block active_servicio %}class="active"{% endblock %}
+{% block active_proyecto %}{% endblock %}
+{% block active_blog %}{% endblock %}
+{% block active_contacto %}{% endblock %}
+
+{% block slider %}{% endblock %}
+
+{% block contenido %}
+	<section id="inner-headline">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<ul class="breadcrumb">
+						<li><a href="{{ path('frontend_homepage') }}"><i class="fa fa-home"></i></a><i class="icon-angle-right"></i></li>
+						<li class="active">{{ 'Servicios'|trans }}</li>
+						<li class="active">{{ 'Soporte TI'|trans }}</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="content">
+		<div class="container">
+			<div class="row">
+			<div class="col-lg-8">
+				<article>
+						<div class="post-image">
+							<div class="post-heading">
+								<h3>{{ 'Soporte TI'|trans }}</h3>
+							</div>
+							<img src="{{ asset(global.directorio_img ~ "soporte01.jpg")}}" alt="{{ 'Soporte TI'| trans }}" />
+						</div>
+						<p>
+							 {{'Contamos con un equipo técnico profesional y de experiencia para atender diferentes tipos de servicios de soporte y mantenimiento de hardware y software en general'|trans }}.
+						</p>
+						<p>
+							 {{'Nuestro principal objetivo es el de proveer un servicio de soporte y mantenimiento tecnológico continuo y de garantía, que permita a las grandes empresas, pymes y comercios obtener una respuesta y solución inmediata a los problemas o desperfectos que puedan presentar sus equipos , sistemas o estructura tecnológica'|trans }}.
+						</p>
+						<p>
+							 {{'Atendemos bajo la modalidad de: contrato o convenio de asistencia'|trans }}.
+						</p>						
+				</article>
+
+
+				<div class="row">
+
+
+					<div class="col-lg-6">
+						<img src="{{ asset(global.directorio_img ~ "soporte02.jpg")}}" alt="{{ '¿Cuentas con un Servicio de Soporte TI?'|trans }}" />
+					</div>
+					<div class="col-lg-6">
+						<h4>{{ '¿Cuentas con un Servicio de Soporte TI?'|trans }}</h4>
+						<p>
+							 {{'Si tu empresa o negocio no cuenta con un área o servicio de soporte TI que te brinde una asistencia rápida y adecuada para atender tus consultas o solucionar los problemas que puedas tener con tus equipos, sistemas o estructura tecnológica, no te preocupes, nosotros te brindamos la solución a tus problemas'|trans }}.
+						</p>
+
+						<p>
+							 {{'Te ofrecemos nuestros Canales y Servicios de Soporte'|trans }}.
+						</p>
+
+						<p>
+							<strong>{{'Para mayor información, por favor comuníquese con nosotros a través de'|trans }}:</strong><br>
+							<i class="fa fa-phone fa-1x"></i> <a href="tel:+51016614435">(+51) 1-6614435</a><br>
+							<i class="fa fa-envelope-o fa-1x"></i> <a href="mailto:info@tecloy.com">info@tecloy.com</a>
+						</p>
+					</div>
+				</div>	
+
+				<div class="row">
+					<div class="col-lg-6">
+						<h4>{{ 'Canales de Atención de Soporte'|trans }}</h4>
+						<p>
+							 {{'Nuestros clientes podrán comunicarse y transmitir sus dudas, consultas o incidencias en un amplio horario de atención a través de cualquiera de los siguientes canales de atención de soporte'|trans }}.
+						</p>
+						<p>
+							<i class="fa fa-phone fa-1x"></i> <a href="tel:+51016614435">(+51) 1-6614435</a><br>
+							<i class="fa fa-envelope-o fa-1x"></i> <a href="mailto:soporte@tecloy.com">soporte@tecloy.com</a><br>
+							<i class="fa fa-comment-o fa-1x"></i> <a href="mailto:soporte@tecloy.com">soporte@tecloy.com</a>
+						</p>
+						<p>
+							{{ 'El personal técnico lo atenderá de forma inmediata para solucionar su problema mediante la Asistencia Remota u On-Site'|trans }}.
+						</p>
+					</div>
+					<div class="col-lg-6">
+						<img src="{{ asset(global.directorio_img ~ "soporte03.jpg")}}" alt="{{ 'Canales de Atención de Soporte'|trans }}" />
+					</div>					
+				</div>
+
+				<div class="row">
+					<div class="col-lg-6">
+						<img src="{{ asset(global.directorio_img ~ "soporte04.jpg")}}" alt="{{ 'Soporte – Asistencia Remota'|trans }}" />
+					</div>
+					<div class="col-lg-6">
+						<h4>{{ 'Soporte – Asistencia Remota'|trans }}</h4>
+						<p>
+							 {{'Nuestro personal técnico podrá atender y resolver sus dudas, consultas o incidencias vía telefónica, email, chat y/o escritorio remoto'|trans }}.
+						</p>						
+						<p>
+							{{ 'Mediante herramientas y siempre con la autorización del cliente, el personal técnico podrá ingresar de forma remota a sus equipos o sistemas  para analizar el problema y darle una pronta y adecuada solución'|trans }}.
+						</p>
+						<p>
+							{{ 'Este servicio permite brindar a nuestros clientes una inmediata atención de sus problemas'|trans }}.
+						</p>
+						<p>
+							{{ 'Si el problema no pudiera ser resuelto de forma remota por diferentes motivos, el personal técnico se hará presente en el lugar cumpliendo con el acuerdo establecido con el cliente'|trans }}.
+						</p>
+					</div>									
+				</div>
+				
+				<div class="row">
+					<div class="col-lg-6">
+						<h4>{{ 'Soporte – Asistencia On-Site'|trans }}</h4>
+						<p>
+							 {{'Nuestro personal técnico se hace presente en el lugar para atender y resolver sus dudas, consultas o incidencias reportadas'|trans }}.
+						</p>						
+						<p>
+							{{ 'El personal técnico se hará presente en el lugar de la incidencia, en el menor tiempo posible,  y siempre cumpliendo con el acuerdo establecido con el cliente'|trans }}.
+						</p>						
+					</div>
+					<div class="col-lg-6">
+						<img src="{{ asset(global.directorio_img ~ "soporte05.jpg")}}" alt="{{ 'Soporte – Asistencia On-Site'|trans }}" />
+					</div>
+				</div>
+				
+				<div class="row">	
+					<div class="col-lg-6">
+						<img src="{{ asset(global.directorio_img ~ "soporte06.jpg")}}" alt="{{ 'Reportes y Estadísticas'|trans }}" />
+					</div>								
+					<div class="col-lg-6">
+						<h4>{{ 'Reportes y Estadísticas'|trans }}</h4>
+						<p>
+							 {{'Todos nuestros clientes podrán ingresar a nuestra plataforma web con su usuario y contraseña para poder obtener y acceder a información actualizada on-line con reportes y gráficos de ayuda de todas las incidencias reportadas y atendidas a la fecha'|trans }}.
+						</p>
+						<p>
+							 {{'Si ya eres cliente y aun no cuentas con tu usuario y contraseña, solicítalo en los siguientes canales de atención al cliente'|trans }}: 							 
+						</p>								
+						<p>
+							<i class="fa fa-phone fa-1x"></i> <a href="tel:+51016614435">(+51) 1-6614435</a><br>
+							<i class="fa fa-envelope-o fa-1x"></i> <a href="mailto:info@tecloy.com">info@tecloy.com</a>
+						</p>										
+					</div>						
+				</div>								
+			</div>
+			<div class="col-lg-4">				
+				{% include 'FrontendBundle:Default:rightsoporte.html.twig' %}
+			</div>
+		</div>
+		</div>
+	</section>
+
+{% endblock %}

@@ -1,13 +1,10 @@
 {% extends '::frontend.html.twig' %}
 
-{% block title %}{{ 'Empresa'|trans }}{% endblock %}
-
-{% block metadescrip %}{{'TECLOY Tecnologpia & Servicios es una empresa peruana proveedora de servicios y soluciones de tecnología de la información y las comunicaciones'|trans }}{% endblock %}
-{% block metakey %}tecloy, empresa, compañia, quienes somos, somos, tecnologpia, servicios, tecnología & servicios{% endblock %}
+{% block title %}{{ 'Desarrollo de Aplicaciones'|trans }}{% endblock %}
 
 {% block active_home %}{% endblock %}
-{% block active_empresa %}class="active"{% endblock %}
-{% block active_servicio %}{% endblock %}
+{% block active_empresa %}{% endblock %}
+{% block active_servicio %}class="active"{% endblock %}
 {% block active_proyecto %}{% endblock %}
 {% block active_blog %}{% endblock %}
 {% block active_contacto %}{% endblock %}
@@ -21,7 +18,7 @@
 				<div class="col-lg-12">
 					<ul class="breadcrumb">
 						<li><a href="{{ path('frontend_homepage') }}"><i class="fa fa-home"></i></a><i class="icon-angle-right"></i></li>
-						<li class="active">{{ 'Empresa'|trans }}</li>
+						<li class="active">{{ 'Desarrollo de Aplicaciones'|trans }}</li>						
 					</ul>
 				</div>
 			</div>

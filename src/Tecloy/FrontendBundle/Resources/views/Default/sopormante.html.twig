@@ -1,0 +1,110 @@
+{% extends '::frontend.html.twig' %}
+
+{% block title %}{{ 'Soporte y Mantenimiento TI'|trans }}{% endblock %}
+
+{% block metadescrip %}{{'Nuestro principal objetivo es el de proveer un servicio integral de soporte y mantenimiento TI en un amplio horario de atención, que permita asegurar y garantizar la continuidad del negocio y operaciones de todas las empresas y comercios que no cuenten con personal técnico para la atención y solución de sus problemas tecnológicos'|trans }}{% endblock %}
+{% block metakey %}soporte, soporte ti, soporte remoto, soporte en sitio, soporte onsite, remoto, onsite, mantenimiento, mantenimiento TI, mantenimiento preventivo, mantenimiento correctivo, preventivo, correctivo, reparacion, cambio de partes, atencion al cliente, cliente{% endblock %}
+
+{% block active_home %}{% endblock %}
+{% block active_empresa %}{% endblock %}
+{% block active_servicio %}class="active"{% endblock %}
+{% block active_proyecto %}{% endblock %}
+{% block active_blog %}{% endblock %}
+{% block active_contacto %}{% endblock %}
+
+{% block slider %}{% endblock %}
+
+{% block contenido %}
+	<section id="inner-headline">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<ul class="breadcrumb">
+						<li><a href="{{ path('frontend_homepage') }}"><i class="fa fa-home"></i></a><i class="icon-angle-right"></i></li>
+						<li class="active">{{ 'Servicios'|trans }}</li>
+						<li class="active">{{ 'Soporte y Mantenimiento TI'|trans }}</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="content">
+		<div class="container">
+			<div class="row">
+			<div class="col-lg-8">
+				<article>
+						<div class="post-image">
+							<div class="post-heading">
+								<h3>{{ 'Soporte y Mantenimiento TI'|trans }}</h3>
+							</div>
+							<img src="{{ asset(global.directorio_img ~ "sopormante01.jpg")}}" alt="{{ 'Soporte y Mantenimiento TI'| trans }}" />
+						</div>
+						<p>
+							 <strong>{{ 'Problemática actual en las empresas:'|trans }}</strong> {{'En la actualidad son muchas las empresas y comercios que no cuentan con un área o personal técnico especializado que se encargue de atender y resolver de forma inmediata todos los problemas o desperfectos que se puedan presentar en sus equipos (Servidores, Switch, Router, Pc, Laptos, Impresoras, etc), sistemas (Programas empresariales, Bases de Datos, Correo electrónico, etc.) y estructura tecnológica (Data Center, Cableado y puntos de red, cámaras de seguridad, etc.)'|trans }}.
+						</p>
+						<p>
+							 <strong>{{ 'Nuestro objetivo:'|trans }}</strong> {{'Nuestro principal objetivo es el de proveer un servicio integral de soporte y mantenimiento TI en un amplio horario de atención, que permita asegurar y garantizar la continuidad del negocio y operaciones de todas las empresas y comercios que no cuenten con personal técnico para la atención y solución de sus problemas tecnológicos'|trans }}.
+						</p>
+						<p>
+							 {{'Atendemos bajo la modalidad de: contrato o convenio de asistencia'|trans }}.
+						</p>	
+						<p>
+							<strong>{{'¿Qué ofrecemos?'|trans }}</strong> 
+						</p>					
+				</article>
+
+
+				<div class="row">
+					<div class="col-lg-6">
+						<img src="{{ asset(global.directorio_img ~ "soporte04.jpg")}}" alt="{{ 'Soporte TI'|trans }}" />
+					</div>
+					<div class="col-lg-6">
+						<h4><a href="{{ path('frontend_soporte') }}">{{ 'Soporte TI'|trans }}</a></h4>
+						<p>
+							 {{'Es el servicio integral y personalizado que permite a las empresas y comercios recibir una atención inmediata para la solución de sus problemas tecnológicos'|trans }}.
+						</p>
+
+						<p>
+							 {{'Ponemos a disposición de nuestros clientes un staff de profesionales en un amplio horario de atención para asegurar y garantizar la continuidad de su negocio y operaciones'|trans }}. <a href="{{ path('frontend_soporte') }}">{{'Leer más'|trans }}</a>	
+						</p>
+
+						<p>
+							<strong>{{'Para mayor información, por favor comuníquese con nosotros a través de'|trans }}:</strong><br>
+							<i class="fa fa-phone fa-1x"></i> <a href="tel:+51016614435">(+51) 1-6614435</a><br>
+							<i class="fa fa-envelope-o fa-1x"></i> <a href="mailto:info@tecloy.com">info@tecloy.com</a>
+						</p>
+					</div>
+				</div>	
+
+				<div class="row">
+					<div class="col-lg-6">
+						<img src="{{ asset(global.directorio_img ~ "sopormante02.jpg")}}" alt="{{ 'Mantenimiento TI'|trans }}" />
+					</div>
+					<div class="col-lg-6">
+						<h4><a href="{{ path('frontend_mantenimiento') }}">{{ 'Mantenimiento TI'|trans }}</a></h4>
+						<p>
+							 {{'Es el servicio integral y personalizado que permite prevenir y corregir problemas o desperfectos en los equipos, sistemas y estructura tecnológica a través de visitas técnicas programadas en horarios flexibles que permitan asegurar y garantizar la continuidad del negocio y operaciones de nuestros clientes'|trans }}. <a href="{{ path('frontend_mantenimiento') }}">{{'Leer más'|trans }}</a>
+						</p>
+
+						<p>
+							 {{'Mantener, prevenir y corregir a tiempo es la clave del éxito de la continuidad tecnológica de todo negocio'|trans }}	
+						</p>
+
+						<p>
+							<strong>{{'Para mayor información, por favor comuníquese con nosotros a través de'|trans }}:</strong><br>
+							<i class="fa fa-phone fa-1x"></i> <a href="tel:+51016614435">(+51) 1-6614435</a><br>
+							<i class="fa fa-envelope-o fa-1x"></i> <a href="mailto:info@tecloy.com">info@tecloy.com</a>
+						</p>
+					</div>
+				</div>				
+			</div>
+
+			<div class="col-lg-4">
+				{% include 'FrontendBundle:Default:rightsopormante.html.twig' %}
+			</div>
+		</div>
+		</div>
+	</section>
+
+{% endblock %}

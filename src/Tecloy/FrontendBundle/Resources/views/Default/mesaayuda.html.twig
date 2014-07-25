@@ -1,0 +1,90 @@
+{% extends '::frontend.html.twig' %}
+
+{% block title %}{{ 'Mesa de Ayuda'|trans }}{% endblock %}
+
+{% block active_home %}{% endblock %}
+{% block active_empresa %}{% endblock %}
+{% block active_servicio %}class="active"{% endblock %}
+{% block active_proyecto %}{% endblock %}
+{% block active_blog %}{% endblock %}
+{% block active_contacto %}{% endblock %}
+
+{% block slider %}{% endblock %}
+
+{% block contenido %}
+	<section id="inner-headline">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<ul class="breadcrumb">
+						<li><a href="{{ path('frontend_homepage') }}"><i class="fa fa-home"></i></a><i class="icon-angle-right"></i></li>
+						<li class="active">{{ 'Servicios'|trans }}</li>
+						<li class="active">{{ 'Mesa de Ayuda'|trans }}</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="content">
+		<div class="container">
+			<div class="row">
+			<div class="col-lg-8">
+				<article>
+						<div class="post-image">
+							<div class="post-heading">
+								<h3>{{ 'Mesa de Ayuda'|trans }}</h3>
+							</div>
+							<img src="{{ asset(global.directorio_img ~ "mesaayuda01.jpg")}}" alt="{{ 'Mesa de Ayuda'| trans }}" />
+						</div>
+						<p>
+							 {{'Ponemos a disposición de nuestros clientes una Mesa de Ayuda (MDA), integrada por un conjunto de recursos y personal experto en tecnología, para brindar un servicio integral con la finalidad de prestar, gestionar y solucionar todas las posibles incidencias, necesidades y requerimientos relacionados a la Tecnología de la Información y la Comunicación'|trans }}.
+						</p>
+						<p>
+							 {{'Nuestro principal objetivo es el de otorgar un asesoramiento integral en relación a productos, servicios y proyectos tecnológicos, y también el proporcionar una inmediata respuesta y solución a los problemas de nuestros clientes'|trans }}.
+						</p>															
+				</article>
+
+
+				<div class="row">
+
+
+					<div class="col-lg-6">
+						<img src="{{ asset(global.directorio_img ~ "soporte02.jpg")}}" alt="{{ '¿Necesitas ayuda?'|trans }}" />
+					</div>
+					<div class="col-lg-6">
+						<h4>{{ '¿Necesitas ayuda?'|trans }}</h4>
+						<p>
+							 {{'Si necesitas ayuda y solución inmediata ante una duda, consulta o problema relacionado a servicios o productos de tecnología, no dudes en llamarnos'|trans }}. {{'Contamos con un staff de profesionales a tu disposición en un amplio horario de atención que te ayudaran a solucionar tus problemas'|trans }}.
+						</p>						
+					</div>
+				</div>	
+
+				<div class="row">
+					<div class="col-lg-6">
+						<h4>{{ 'Canales de Atención MDA'|trans }}</h4>
+						<p>
+							 {{'Nuestros clientes podrán comunicarse y transmitir sus dudas, consultas o incidencias en un amplio horario de atención a través de cualquiera de los siguientes canales de atención de soporte'|trans }}.
+						</p>
+						<p>
+							<i class="fa fa-phone fa-1x"></i> <a href="tel:+51016614435">(+51) 1-6614435</a><br>
+							<i class="fa fa-envelope-o fa-1x"></i> <a href="mailto:soporte@tecloy.com">mda@tecloy.com</a><br>				
+						</p>
+						<p>
+							{{ 'El personal técnico lo atenderá de forma inmediata para solucionar su problema'|trans }}.
+						</p>
+					</div>
+					<div class="col-lg-6">
+						<img src="{{ asset(global.directorio_img ~ "soporte03.jpg")}}" alt="{{ 'Canales de Atención MDA'|trans }}" />
+					</div>					
+				</div>
+				
+			</div>
+			<div class="col-lg-4">				
+				{% include 'FrontendBundle:Default:rightmesaayuda.html.twig' %}
+			</div>
+		</div>
+		</div>
+	</section>
+
+{% endblock %}

@@ -68,5 +68,24 @@ class DefaultController extends Controller
             return $this->render('FrontendBundle:Default:contacto.html.twig', array('form' => $form->createView()));
         
     }
+
+    public function soporteAction()
+    {
+        return $this->render('FrontendBundle:Default:soporte.html.twig');
+    }
    
+    public function mantenimientoAction()
+    {
+        return $this->render('FrontendBundle:Default:mantenimiento.html.twig');
+    }
+
+    public function sopormantenAction()
+    {
+        return $this->render('FrontendBundle:Default:sopormante.html.twig');
+    }
+
+    public function mesaayudaAction()
+    {
+        return $this->render('FrontendBundle:Default:mesaayuda.html.twig');
+    }
 }

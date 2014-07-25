@@ -2,6 +2,9 @@
 
 {% block title %}{{ 'Home'|trans }}{% endblock %}
 
+{% block metadescrip %}{{'TECLOY Tecnologpia & Servicios es una empresa peruana proveedora de servicios y soluciones de tecnología de la información y las comunicaciones'|trans }}{% endblock %}
+{% block metakey %}tecloy, empresa, compañia, quienes somos, somos, tecnologpia, servicios, tecnología & servicios, soporte, soporte tecnico, soporte ti, soporte remoto, soporte onsite, soporte en sitio, remoto, on site, mantenimiento, mantenimiento TI, mantenimiento preventivo, mantenimiento correctivo, preventivo, correctivo, proyectos TI, proyectos, tecnología, sistemas, programas, gabinetes, servidores, swtich{% endblock %}
+
 {% block active_home %}class="active"{% endblock %}
 {% block active_empresa %}{% endblock %}
 {% block active_servicio %}{% endblock %}
@@ -37,9 +40,9 @@
               				<li>
                 				<img src="{{ asset(global.directorio_img ~ "slides/8.jpg")}}" alt="" />
                 				<div class="flex-caption">
-                    				<h3>{{ 'Soporte TI'|trans }}</h3> 
+                    				<h3>{{ 'Soporte y Mantenimiento TI'|trans }}</h3> 
 									<p>{{ 'Usuarios, Data Center, Hardware, Software, Proyectos, etc'|trans }}.</p> 
-									<a href="#" class="btn btn-theme">{{ 'Leer más'|trans }}</a>
+									<a href="{{ path('frontend_soporte') }}" class="btn btn-theme">{{ 'Leer más'|trans }}</a>
                 				</div>
               				</li>
               				<li>
@@ -100,7 +103,7 @@
 									
 							</div>
 							<div class="box-bottom">
-								<a href="#">{{ 'Leer más'|trans }}</a>
+								<a href="{{ path('frontend_mesaayuda') }}">{{ 'Leer más'|trans }}</a>
 							</div>
 						</div>
 					</div>
@@ -141,7 +144,7 @@
 					<div class="col-lg-3">
 						<div class="box">
 							<div class="box-gray aligncenter">
-								<h4>{{ 'Soporte y Mant.'|trans }}</h4>
+								<h4>{{ 'Soporte y Mant. TI'|trans }}</h4>
 								<div class="icon">
 								<i class="fa fa-wrench fa-3x"></i>
 								</div>
@@ -151,7 +154,7 @@
 									
 							</div>
 							<div class="box-bottom">
-								<a href="#">{{ 'Leer más'|trans }}</a>
+								<a href="{{ path('frontend_sopormanten') }}">{{ 'Leer más'|trans }}</a>
 							</div>
 						</div>
 					</div>

@@ -1,0 +1,160 @@
+{% extends '::frontend.html.twig' %}
+
+{% block title %}{{ 'Mantenimiento TI'|trans }}{% endblock %}
+
+{% block metadescrip %} {{'Nuestros clientes podrán solicitar y coordinar la visita de un personal o equipo técnico para los trabajos de mantenimiento preventivo y correctivo de sus equipos y sistemas'|trans }}{% endblock %}
+{% block metakey %}mantenimiento, mantenimiento TI, mantenimiento preventivo, mantenimiento correctivo, preventivo, correctivo, reparacion, cambio de partes, atencion al cliente, cliente{% endblock %}
+
+{% block active_home %}{% endblock %}
+{% block active_empresa %}{% endblock %}
+{% block active_servicio %}class="active"{% endblock %}
+{% block active_proyecto %}{% endblock %}
+{% block active_blog %}{% endblock %}
+{% block active_contacto %}{% endblock %}
+
+{% block slider %}{% endblock %}
+
+{% block contenido %}
+	<section id="inner-headline">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<ul class="breadcrumb">
+						<li><a href="{{ path('frontend_homepage') }}"><i class="fa fa-home"></i></a><i class="icon-angle-right"></i></li>
+						<li class="active">{{ 'Servicios'|trans }}</li>
+						<li class="active">{{ 'Mantenimiento TI'|trans }}</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="content">
+		<div class="container">
+			<div class="row">
+			<div class="col-lg-8">
+				<article>
+						<div class="post-image">
+							<div class="post-heading">
+								<h3>{{ 'Mantenimiento TI'|trans }}</h3>
+							</div>
+							<img src="{{ asset(global.directorio_img ~ "mante01.jpg")}}" alt="{{ 'Mantenimiento TI'| trans }}" />
+						</div>						
+						<p>
+							 {{'Contamos con un equipo técnico profesional y de experiencia para brindar los servicios de mantenimiento preventivo y correctivo de hardware y software en general'|trans }}.
+						</p>
+						<p>
+							 {{'Nuestro principal objetivo es el de proveer un servicio integral de mantenimiento preventivo y correctivo que permita a las grandes empresas, pymes y comercios asegurar la continuidad de su negocio y operaciones a través de trabajos coordinados para prevenir y corregir problemas o desperfectos que puedan presentar sus equipos , sistemas o estructura tecnológica'|trans }}.
+						</p>
+						<p>
+							 {{'Atendemos bajo la modalidad de: contrato o convenio de asistencia'|trans }}.
+						</p>						
+				</article>
+
+
+				<div class="row">
+
+
+					<div class="col-lg-6">
+						<img src="{{ asset(global.directorio_img ~ "mante02.jpg")}}" alt="{{ '¿Cuentas con un Servicio de Mantenimiento TI?'|trans }}" />
+					</div>
+					<div class="col-lg-6">
+						<h4>{{ '¿Cuentas con un Servicio de Mantenimiento TI?'|trans }}</h4>
+						<p>
+							 {{'Si tu empresa o negocio no cuenta con un servicio de mantenimiento TI que te brinde un adecuado plan de trabajo de prevención y corrección de posibles problemas o desperfecto que puedan presentar tus equipos, sistemas o estructura tecnológica, nosotros te brindamos la solución a tus problemas'|trans }}.
+						</p>
+
+						<p>
+							 {{'Te ofrecemos nuestros Canales y Servicios de Mantenimiento'|trans }}.
+						</p>
+
+						<p>
+							<strong>{{'Para mayor información, por favor comuníquese con nosotros a través de'|trans }}:</strong><br>
+							<i class="fa fa-phone fa-1x"></i> <a href="tel:+51016614435">(+51) 1-6614435</a><br>
+							<i class="fa fa-envelope-o fa-1x"></i> <a href="mailto:info@tecloy.com">info@tecloy.com</a>
+						</p>
+					</div>
+				</div>	
+
+				<div class="row">
+					<div class="col-lg-6">
+						<h4>{{ 'Canales de Atención de Mantenimiento TI'|trans }}</h4>
+						<p>
+							 {{'Nuestros clientes podrán solicitar y coordinar la visita de un personal o equipo técnico para los trabajos de mantenimiento preventivo y correctivo de sus equipos y sistemas'|trans }}.
+						</p>
+						<p>
+							<i class="fa fa-phone fa-1x"></i> <a href="tel:+51016614435">(+51) 1-6614435</a><br>
+							<i class="fa fa-envelope-o fa-1x"></i> <a href="mailto:mantenimiento@tecloy.com">mantenimiento@tecloy.com</a>
+						</p>
+						<p>
+							{{ 'Todos los trabajos de mantenimiento se realizan de acuerdo a una programación y previa coordinación con el cliente'|trans }}.
+						</p>
+					</div>
+					<div class="col-lg-6">
+						<img src="{{ asset(global.directorio_img ~ "soporte03.jpg")}}" alt="{{ 'Canales de Atención de Mantenimiento TI'|trans }}" />
+					</div>					
+				</div>
+
+				<div class="row">
+					<div class="col-lg-6">
+						<img src="{{ asset(global.directorio_img ~ "mante04.jpg")}}" alt="{{ 'Mantenimiento Preventivo'|trans }}" />
+					</div>
+					<div class="col-lg-6">
+						<h4>{{ 'Mantenimiento Preventivo'|trans }}</h4>
+						<p>
+							 {{'Nuestro personal técnico se hará presente en el lugar para hacer los trabajos de mantenimiento preventivo en los equipos y sistemas del cliente, con la finalidad de prevenir y evitar que surjan problemas o desperfectos en un futuro que vayan a afectar la continuidad del negocio y operaciones de la empresa'|trans }}.
+						</p>	
+						<p>
+							{{ 'De acuerdo al tipo de trabajo, los equipos pueden ser llevados a nuestras instalaciones y luego devueltos al local del cliente'|trans }}.
+						</p>					
+						<p>
+							{{ 'El servicio tiene por finalidad prevenir futuros problemas o desperfecto tecnológicos'|trans }}.
+						</p>						
+					</div>									
+				</div>
+				
+				<div class="row">
+					<div class="col-lg-6">
+						<h4>{{ 'Mantenimiento Correctivo'|trans }}</h4>
+						<p>
+							 {{'Nuestro personal técnico tiene la tarea de corregir y reparar, incluyendo cambio de partes defectuosas, los problemas o desperfectos que puedan tener los equipos o sistemas de nuestros clientes'|trans }}.
+						</p>						
+						<p>
+							{{ 'De acuerdo al tipo de trabajo, los equipos pueden ser llevados a nuestras instalaciones y luego devueltos al local del cliente'|trans }}.
+						</p>					
+						<p>
+							{{ 'El servicio tiene por finalidad corregir y/o reparar problemas o desperfecto tecnológicos'|trans }}.
+						</p>					
+					</div>
+					<div class="col-lg-6">
+						<img src="{{ asset(global.directorio_img ~ "mante06.jpg")}}" alt="{{ 'Mantenimiento Correctivo'|trans }}" />
+					</div>
+				</div>
+				
+				<div class="row">	
+					<div class="col-lg-6">
+						<img src="{{ asset(global.directorio_img ~ "soporte06.jpg")}}" alt="{{ 'Reportes y Estadísticas'|trans }}" />
+					</div>								
+					<div class="col-lg-6">
+						<h4>{{ 'Reportes y Estadísticas'|trans }}</h4>
+						<p>
+							 {{'Todos nuestros clientes podrán ingresar a nuestra plataforma web con su usuario y contraseña para poder obtener y acceder a información actualizada on-line con reportes y gráficos de ayuda de todos los trabajos de mantenimiento realizados a sus equipos, sistemas y/o estructura tecnológica'|trans }}.
+						</p>
+						<p>
+							 {{'Si ya eres cliente y aun no cuentas con tu usuario y contraseña, solicítalo en los siguientes canales de atención al cliente'|trans }}: 							 
+						</p>								
+						<p>
+							<i class="fa fa-phone fa-1x"></i> <a href="tel:+51016614435">(+51) 1-6614435</a><br>
+							<i class="fa fa-envelope-o fa-1x"></i> <a href="mailto:info@tecloy.com">info@tecloy.com</a>
+						</p>										
+					</div>						
+				</div>								
+			</div>
+			<div class="col-lg-4">
+				{% include 'FrontendBundle:Default:rightmante.html.twig' %}
+			</div>
+		</div>
+		</div>
+	</section>
+
+{% endblock %}
