@@ -1,0 +1,158 @@
+{% extends '::frontend.html.twig' %}
+
+{% block title %}{{ 'Instalación de Switch, Router, Servidores, Gabinetes, Rack, Patch Panel, Ordenadores, Pc, Impresoras'|trans }}{% endblock %}
+
+{% block metadescrip %} {{'Instalación de Switch, Router, Servidores, Gabinetes, Rack, Patch Panel, Ordenadores, data center, Pc, Impresoras, Lima, Perú'|trans }}{% endblock %}
+{% block metakey %}instalacion, instalación, instalaciones, instalar, lima, peru, data center, switch, router, patch panel, gabinetes, rack, ordenadores, impresoras, pc, laptop{% endblock %}
+
+{% block active_home %}{% endblock %}
+{% block active_empresa %}{% endblock %}
+{% block active_servicio %}class="active"{% endblock %}
+{% block active_proyecto %}{% endblock %}
+{% block active_blog %}{% endblock %}
+{% block active_contacto %}{% endblock %}
+
+{% block slider %}{% endblock %}
+
+{% block contenido %}
+	<section id="inner-headline">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<ul class="breadcrumb">
+						<li><a href="{{ path('frontend_homepage') }}"><i class="fa fa-home"></i></a><i class="icon-angle-right"></i></li>
+						<li class="active">{{ 'Servicios'|trans }}</li>
+						<li class="active">{{ 'Venta e Instalación de Hardware'|trans }}</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="content">
+		<div class="container">
+			<div class="row">
+			<div class="col-lg-8">
+				<article>
+						<div class="post-image">
+							<div class="post-heading">
+								<h3>{{ 'Venta e Instalación de Hardware'|trans }}</h3>
+							</div>
+							<img src="{{ asset(global.directorio_img ~ "hardware01.jpg")}}" alt="{{ 'Instalación de Hardware'| trans }}" />
+						</div>
+						<p>
+							 {{'Contamos con un equipo técnico profesional y de experiencia para atender diferentes tipos de instalaciones de hardware en general'|trans }}.
+						</p>
+						<p>
+							 {{'Nuestro principal objetivo es el de proveer un servicio confiable y de calidad en la instalación y configuración de hardware en general, que permita a las grandes empresas, pymes y comercios instalar e implementar sus equipos de comunicaciones y centro de datos'|trans }}.
+						</p>											
+				</article>
+
+				<div class="row">					
+					<div class="col-lg-6">
+						<h4>{{ 'Venta e Instalación de Gabinetes y Rack'|trans }}</h4>
+						<p>
+							 {{'Traslado, mudanza, instalación y energización de gabinetes y rack de comunicaciones'|trans }}.
+						</p>
+						<p>
+							 {{'Contamos con un equipo técnico profesional y de experiencia para realizar un trabajo de calidad en el centro de comunicaciones de tu empresa'|trans }}.
+						</p>
+						<p>
+							<ul>
+								<li><i class="icon-angle-right"></i>{{ 'Venta de gabinetes y/o rack de comunicaciones'|trans }}.</li>
+								<li><i class="icon-angle-right"></i>{{ 'Instalación y/o anclaje de gabinetes'|trans }}.</li>
+								<li><i class="icon-angle-right"></i>{{ 'Desinstalación, traslado, mudanza de gabinetes'|trans }}.</li>
+								<li><i class="icon-angle-right"></i>{{ 'Energizacion e instalación eléctrica en gabinetes'|trans }}.</li>	
+							</ul>
+						</p>
+					</div>
+					<div class="col-lg-6">
+						<img src="{{ asset(global.directorio_img ~ "hardware02.jpg")}}" alt="{{ 'Venta e Instalación de Gabinetes y Rack'|trans }}" />
+					</div>
+				</div>	
+
+				<div class="row">					
+					<div class="col-lg-6">
+						<h4>{{ 'Venta e Instalación de Switch y Router'|trans }}</h4>
+						<p>
+							 {{'Instalación, monjate, rackeado, configuración y energización de Switch y Router'|trans }}.
+						</p>						
+						<p>
+							<ul>	
+								<li><i class="icon-angle-right"></i>{{ 'Venta de Switch y Router'|trans }}.</li>		
+								<li><i class="icon-angle-right"></i>{{ 'Instalación y configuración de Switch y Router'|trans }}.</li>
+								<li><i class="icon-angle-right"></i>{{ 'Montaje, rackeado y energizacion de Switch y Router'|trans }}.</li>	
+								<li><i class="icon-angle-right"></i>{{ 'Instalación y configuración de Redes WiFi'|trans }}.</li>
+							</ul>
+						</p>
+					</div>
+					<div class="col-lg-6">
+						<img src="{{ asset(global.directorio_img ~ "hardware03.jpg")}}" alt="{{ 'Venta e Instalación de Switch y Router'|trans }}" />
+					</div>
+				</div>
+
+				<div class="row">					
+					<div class="col-lg-6">
+						<h4>{{ 'Venta e Instalación de Patch Panel, Ordenadores, Patch Cord, Fibra Optica'|trans }}</h4>
+						<p>
+							 {{'Instalación, monjate, rackeado, de Patch Panel, Ordenadores, Patch Cord UTP y F.O'|trans }}.
+						</p>						
+						<p>
+							<ul>	
+								<li><i class="icon-angle-right"></i>{{ 'Venta de Patch Panel, Ordenadores, Patch Cord UTP y F.O'|trans }}.</li>
+								<li><i class="icon-angle-right"></i>{{ 'Instalación, montaje, rackeado Patch Panel, Ordenadores'|trans }}.</li><li><i class="icon-angle-right"></i>{{ 'Instalación y cableado de Patch Cord UTP y F.O'|trans }}.</li>
+							</ul>
+						</p>
+					</div>
+					<div class="col-lg-6">
+						<img src="{{ asset(global.directorio_img ~ "hardware04.jpg")}}" alt="{{ 'Venta e Instalación de Patch Panel, Ordenadores, Patch Cord, Fibra Optica'|trans }}" />
+					</div>
+				</div>
+
+				<div class="row">					
+					<div class="col-lg-6">
+						<h4>{{ 'Instalación de Servidores, Pc, Laptops, Impresoras y otros'|trans }}</h4>
+						<p>
+							 {{'Traslado, mudanza, instalación y configuración de Servidores, PC, Laptop, Impresoras y otros'|trans }}.
+						</p>						
+						<p>
+							<ul>									
+								<li><i class="icon-angle-right"></i>{{ 'Instalación, montaje, rackeado y configuración de Servidores'|trans }}.</li>
+								<li><i class="icon-angle-right"></i>{{ 'Instalación y configuración de Pc, Laptop, Impresoras,etc'|trans }}.</li>
+							</ul>
+						</p>
+					</div>
+					<div class="col-lg-6">
+						<img src="{{ asset(global.directorio_img ~ "hardware05.jpg")}}" alt="{{ 'Instalación de Servidores, Pc, Laptops, Impresoras'|trans }}" />
+					</div>
+				</div>
+
+				<div class="row">					
+					<div class="col-lg-6">
+						<h4>{{ 'Instalación de Video Wall, Monitores, Pantallas, Proyectores, Camaras de video'|trans }}</h4>
+						<p>
+							 {{'Instalación de Monitores, Pantallas, Video Wall, Proyectores y Camaras de Video'|trans }}.
+						</p>						
+						<p>
+							<ul>									
+								<li><i class="icon-angle-right"></i>{{ 'Instalación, montaje y rackeado de Monitores y Pantallas'|trans }}.</li>
+								<li><i class="icon-angle-right"></i>{{ 'Instalación de Video Wall'|trans }}.</li>
+								<li><i class="icon-angle-right"></i>{{ 'Instalación de Proyectores'|trans }}.</li>
+								<li><i class="icon-angle-right"></i>{{ 'Instalación de Camaras de Video'|trans }}.</li>
+							</ul>
+						</p>
+					</div>
+					<div class="col-lg-6">
+						<img src="{{ asset(global.directorio_img ~ "hardware06.jpg")}}" alt="{{ 'Instalación de Video Wall, Monitores, Pantallas, Proyectores, Camaras de video'|trans }}" />
+					</div>
+				</div>
+				
+			</div>
+			<div class="col-lg-4">				
+				{% include 'FrontendBundle:Default:righthardware.html.twig' %}
+			</div>
+		</div>
+		</div>
+	</section>
+
+{% endblock %}

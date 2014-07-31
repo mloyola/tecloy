@@ -10,6 +10,10 @@ frontend_contacto:
     pattern:  /contacto
     defaults: { _controller: FrontendBundle:Default:contacto }
 
+frontend_hardware:
+    pattern:  /hardware
+    defaults: { _controller: FrontendBundle:Default:hardware }
+
 frontend_soporte:
     pattern:  /soporte
     defaults: { _controller: FrontendBundle:Default:soporte }

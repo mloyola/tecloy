@@ -69,6 +69,11 @@ class DefaultController extends Controller
         
     }
 
+    public function hardwareAction()
+    {
+        return $this->render('FrontendBundle:Default:hardware.html.twig');
+    }
+
     public function soporteAction()
     {
         return $this->render('FrontendBundle:Default:soporte.html.twig');
